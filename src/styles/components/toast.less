@@ -1,0 +1,25 @@
+.mtoast{
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-family: sans-serif;
+	-webkit-transform: translate(-50%, -50%);
+	transform:translate(-50%,-50%);
+	// transition: opacity .5s linear;
+	// opacity: 1;
+	&-text{
+		box-sizing: border-box;
+		display: inline-block;
+		margin: -24px auto auto;
+		padding: 9px 20px;
+		border-radius: 5px;
+		background-clip: padding-box;
+		line-height: 1.5em;
+		color: #fff;
+		background-color: rgba(0,0,0,.8);
+	}
+}

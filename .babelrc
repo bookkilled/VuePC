@@ -1,6 +1,4 @@
 { 
-    "presets": [ "es2015" ], // 预设
-    "plugins": [ "transform-runtime", "transform-remove-console" ], // 插件
-    "comments": false
+    "presets": [ "es2015" ] // 预设
 }
 // 说明参照： https://excaliburhan.com/post/babel-preset-and-plugins.html

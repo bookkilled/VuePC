@@ -1,3 +1,4 @@
+import 'bootstrap/less/bootstrap.less';
 import 'styles/index.less'
 import Vue from 'vue'
 import App from './views/App'

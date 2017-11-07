@@ -44,7 +44,7 @@ var exampleProxy = proxy(options);
 app.use('/wealthgateway', exampleProxy);
 
 var server = http.createServer(app)
-server.listen(3002, ip.address(), (err) => {
+server.listen(8002, ip.address(), (err) => {
   if (err) throw err
   var addr = server.address()
   console.log('==> 🌎 Listening on  http://%s:%d', addr.address, addr.port);

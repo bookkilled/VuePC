@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <div id="pc">
     <!--<m-header v-if="showhead"></m-header>-->
     <transition :name="tsclass">
-     <router-view class="child-view"></router-view>
+      <router-view class="child-view"></router-view>
     </transition>
   </div>
 </template>
@@ -11,7 +11,7 @@
 import { IS_WX, setTit } from '../utils/leadbase'
 
 export default {
-  name: 'app',
+  name: 'pc',
   data() {
     return {
       showhead: true,
@@ -39,17 +39,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-#app {
-  min-height: 100%;
-  width: 100%;
-  max-width: 640px;
-  margin: 0 auto;
-}
 .child-view {
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  transition: all .3s cubic-bezier(.55,0,.1,1);
 }
 .slide-left-enter, .slide-right-leave-active {
   height: 100%;

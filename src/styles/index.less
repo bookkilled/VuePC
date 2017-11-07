@@ -1,80 +1,98 @@
+// bootstrap
+@import "combootstrap.less";
+
+// 动画样式
+@import "animate.less";
+
 // 页面主题 + 通用设置
-@import "variables.less";
-
-// 样式初始化
-@import "normalize.less";
-
+@import "theme.less";
 
 // 加载组件
 @import "components.less";
 
 // @import "leadbase.less";
-body{
-    overflow-y: scroll;    
-}
-
-.errmsg {
-    padding: 50px 0;
-    text-align: center;
-}
-.inp {
-    height: 33px;
-    font-size: 16px;
-    color: #333333;
-    line-height: 32px;
-    width: 100%;
-    border: 0px;
-}
-.smsbtn {
-    width: 86px;
-    height: 30px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 30px;
+::selection {
     color: #fff;
+    background: #f3726d;
+    text-shadow: none;
+}
+a {
+    color: #f4645f;
+    outline: 0;
+}
+html, body{
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+    background: #ebebeb;
+    color: #505050;
+}
+@media (max-width: 767px) { 
+    
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+    
+}
+@media (min-width: 992px) and (max-width: 1199) { 
+    
+}
+@media (min-width: 1200) { 
+    
+}
+.wow { visibility: hidden; }
+.home-banner {
+    height: 350px;
+    background: #FFF url('~images/home-bg.jpg') top center no-repeat;
+    background-size: cover;
     text-align: center;
-    background-color: #c89b55;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-}
-.btn-box {
-    .subtn {
-        display: block;
-        height: 38px;
-        width: 80%;
-        margin: 0 auto;
-        line-height: 38px;
-        border-radius: 4px;
-        background: #c89b55;
-        text-align: center;
-        font-size: 16px;
-        color: #FFF;
-    }
-}
-
-.nav {
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 10px 16px;
-    border-bottom: solid 1px #e5e5e5;
-}
-.linklist {
-    padding: 0 16px;
-    li {
-        color: #8a8a8a;
-        span {
-            display: block;
-            padding: 10px 0;
-        }
-        a {
-            display: block;
-            padding: 10px 0;
+    color: #FFF;
+    .col-md-12 {
+        display: table;
+        height: 350px;
+        .area {
+            display: table-cell;
+            vertical-align: middle;
+            h1 {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            .hdetail { margin-bottom: 25px; }
+            .hbtn {
+                display: inline-block;
+                margin: 0 auto;
+                padding: 10px 20px;
+                background: #f3726d;
+                border-radius: 4px;
+                color: #FFF;
+                text-decoration: none;
+            }
         }
     }
 }
-// .btn {
-//   background: url('~images/ldloading.gif') no-repeat;
-// }
+.home-article {
+    padding: 35px;
+    background: #fff;
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.sidebar .widget {
+    background: #fff;
+    padding: 21px 30px;
+    margin-bottom: 35px;
+    .title {
+        margin-top: 0;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #ebebeb;
+        margin-bottom: 21px;
+        position: relative;
+        &::after {
+            content: "";
+            width: 90px;
+            height: 1px;
+            background: #f4645f;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+        }
+    }
+}
